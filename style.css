@@ -71,13 +71,22 @@ ul li.item-menu a .icon i{
 
 header{
     background-color: orange;
+    height: 130px;
+    display: flex;
 
 }
 
-header img{
-    width: 100px;
-    margin-left: 400px;
+header div img{
+    width: 125px;
+}
+
+.agavi{
+    margin-left: 1500px;
+}
+
+.an{
     
 }
+
 
 
