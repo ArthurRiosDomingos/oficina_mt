@@ -21,6 +21,172 @@
                 <img class="agavi" src="imagens/agavi.png" alt="">
             </div>
     </header>
+    <main class="main-content">
+        <h1 class="page-title">cadastrar serviço</h1>
+        
+        <div class="form-container">
+            <form id="serviceForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="date" id="dataEntrada" placeholder="data de entrada" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="tipoServico" required>
+                            <option value="">tipo de serviço</option>
+                            <option value="revisao">Revisão</option>
+                            <option value="manutencao">Manutenção</option>
+                            <option value="reparo">Reparo</option>
+                            <option value="troca-oleo">Troca de Óleo</option>
+                            <option value="freios">Freios</option>
+    </main>
+        <h1 class="page-title">cadastrar serviço</h1>
+        
+        <div class="form-container">
+            <form id="serviceForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="date" id="dataEntrada" placeholder="data de entrada" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="tipoServico" required>
+                            <option value="">tipo de serviço</option>
+                            <option value="revisao">Revisão</option>
+                            <option value="manutencao">Manutenção</option>
+                            <option value="reparo">Reparo</option>
+                            <option value="troca-oleo">Troca de Óleo</option>
+                            <option value="freios">Freios</option>
+                            <option value="suspensao">Suspensão</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="date" id="dataSaida" placeholder="data de saída">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="mecanicoServico" placeholder="mecânico do serviço" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="number" id="orcamento" placeholder="Orçamento (R$)" min="0" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="idMoto" placeholder="ID moto" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <textarea id="observacao" placeholder="observação" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('serviceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                dataEntrada: document.getElementById('dataEntrada').value,
+                tipoServico: document.getElementById('tipoServico').value,
+                dataSaida: document.getElementById('dataSaida').value,
+                mecanicoServico: document.getElementById('mecanicoServico').value,
+                orcamento: document.getElementById('orcamento').value,
+                idMoto: document.getElementById('idMoto').value,
+                observacao: document.getElementById('observacao').value
+            };
+
+            // Simulação de envio dos dados
+            console.log('Dados do serviço:', formData);
+            alert('Serviço cadastrado com sucesso!');
+            
+            // Limpar formulário após o envio
+            this.reset();
+        });
+
+        // Adicionar funcionalidade aos ícones da sidebar
+        document.querySelectorAll('.sidebar-icon').forEach(icon => {
+            icon.addEventListener('click', function() {
+                console.log('Ícone clicado');
+            });
+        });
+
+        // Definir data atual como padrão para data de entrada
+        document.getElementById('dataEntrada').valueAsDate = new Date();
+    </script>option>
+                            <option value="suspensao">Suspensão</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="date" id="dataSaida" placeholder="data de saída">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="mecanicoServico" placeholder="mecânico do serviço" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="number" id="orcamento" placeholder="Orçamento (R$)" min="0" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="idMoto" placeholder="ID moto" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <textarea id="observacao" placeholder="observação" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('serviceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                dataEntrada: document.getElementById('dataEntrada').value,
+                tipoServico: document.getElementById('tipoServico').value,
+                dataSaida: document.getElementById('dataSaida').value,
+                mecanicoServico: document.getElementById('mecanicoServico').value,
+                orcamento: document.getElementById('orcamento').value,
+                idMoto: document.getElementById('idMoto').value,
+                observacao: document.getElementById('observacao').value
+            };
+
+            // Simulação de envio dos dados
+            console.log('Dados do serviço:', formData);
+            alert('Serviço cadastrado com sucesso!');
+            
+            // Limpar formulário após o envio
+            this.reset();
+        });
+
+        // Adicionar funcionalidade aos ícones da sidebar
+        document.querySelectorAll('.sidebar-icon').forEach(icon => {
+            icon.addEventListener('click', function() {
+                console.log('Ícone clicado');
+            });
+        });
+
+        // Definir data atual como padrão para data de entrada
+        document.getElementById('dataEntrada').valueAsDate = new Date();
+    </script>
 
 
     <nav class="menu-lateral">
