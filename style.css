@@ -74,6 +74,7 @@ header{
     height: 130px;
     display: flex;
 
+
 }
 
 header div img{
@@ -84,6 +85,8 @@ header div img{
     margin-left: 1350px;
     height: 160px;
     width: 140px;
+    margin-top: -5px;
+    position: fixed;
 }
 
 .an{
@@ -91,11 +94,14 @@ header div img{
     margin-top: 20px;
     width: 140px;
     position: fixed;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .ccm{
     margin-left: 100px;
     position: fixed;
+    margin-top: 3px;
 }
 
 
