@@ -87,15 +87,17 @@ header div img{
     width: 140px;
     margin-top: -5px;
     position: fixed;
+    right: 11px;
 }
 
 .an{
-    margin-left: 720px;
+    margin-left: 900px;
     margin-top: 20px;
     width: 140px;
     position: fixed;
     background-color: white;
     border-radius: 5px;
+
 }
 
 .ccm{
@@ -187,6 +189,7 @@ header div img{
             align-self: center;
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
+            margin-left: 160px;
         }
 
         .submit-btn:hover {
